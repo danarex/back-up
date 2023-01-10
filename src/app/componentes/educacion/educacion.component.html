@@ -1,0 +1,39 @@
+
+        <div class="contenedor" id="educacion">
+            <div class="contenedor-educacion">
+                <h2 class="subtitulo">Educación</h2>
+                <section class="education">
+                <div class="cont-educacion" *ngFor="let edu of educacion">
+                    <div class="pencil-acerca-de">
+                        <a href="./" class="pencil-icon">
+                            <i class='bx bxs-edit'></i>
+                        </a></div>
+                    <div class="trash-icon">
+                        <a href="./" class="trash-icon">
+                            <i class='bx bx-trash'></i>
+                        </a>
+                    </div>   
+                    <img src="{{edu.img}}"  alt="Argentina Programa" class="img-education">
+                    <h3>{{edu.nombre}}</h3>
+                    <h4>{{edu.titulo}}</h4>
+                    <p class="copy">Inicio: {{edu.inicio}}</p>
+                    <p class="copy">Fin: {{edu.fin}}</p>
+            </div>
+           <!-- <div class="cont-educacion">
+                <div class="pencil-acerca-de">
+                    <a href="./" class="pencil-icon">
+                        <i class='bx bxs-edit'></i>
+                    </a></div>
+                <div class="trash-icon">
+                    <a href="./" class="trash-icon">
+                        <i class='bx bx-trash'></i>
+                    </a>
+                </div>   
+            <img [src]="educacion.img" alt="liceo" class="img-education">
+            <h3>{{educacion.nombre}}</h3>
+            <h4>{{educacion.titulo}}</h4>
+            <p class="copy"> Inicio: {{educacion.inicio}}</p>
+            <p class="copy"> Inicio: {{educacion.fin}}</p>
+            </div>-->    
+        </section>
+    </div>         
